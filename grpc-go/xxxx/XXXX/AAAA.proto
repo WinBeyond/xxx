@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package xxxx.XXXX;
+
+option go_package="github.com/WinBeyond/xxx/grpc-go/xxxx/XXXX";
+
+
+service AAAA {
+    rpc SayHello (HelloRequest) returns (HelloReply);
+}
+
+
+message HelloRequest {
+    string msg = 1;
+}
+message HelloReply {
+    string msg = 1;
+    string code = 2;
+}
